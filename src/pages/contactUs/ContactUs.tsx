@@ -1,6 +1,6 @@
 import * as React from "react";
 import { useEffect } from "react";
-import Navbar from "../../components/global/Navbar";
+import Navbar from "../../components/navigation/Navbar";
 import ContactForm from "./ContactForm";
 import Footer from "../../components/global/Footer";
 import HeaderComponent from "../products/HeaderComp";

@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { useEffect } from 'react';
 import winebarMollaImagesArray from './Images';
-import Navbar from '../../../components/global/Navbar'
+import Navbar from '../../../components/navigation/Navbar'
 import HeaderComponent from '../../products/HeaderComp';
 import AboutIntroText from '../AboutIntroText';
 import Footer from '../../../components/global/Footer';

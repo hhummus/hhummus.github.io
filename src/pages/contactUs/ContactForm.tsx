@@ -98,8 +98,8 @@ function ContactForm() {
             <option value="firma">Firma</option>
             <option value="privatpersoner">Privat</option>
             <option value="wedding">Bryllupsfotografering</option>
-            <option value="other">Boligfotografering</option>
-            <option value="other">Bestilling av tidsskriftet KONTAKT</option>
+            <option value="Boligfotografering">Boligfotografering</option>
+            <option value="KONTAKT">Bestilling av tidsskriftet KONTAKT</option>
             <option value="other">Annet</option>
           </select>
           <small className="form-error">{errors.subject?.message}</small>

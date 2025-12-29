@@ -13,7 +13,7 @@ import NewMovements from "./pages/portfolio/new-movements/NewMovements";
 import Ambijus from "./pages/portfolio/ambijus/Ambijus";
 import CliffCabin from "./pages/portfolio/cliff-cabin/CliffCabin";
 import Vinbaren from "./pages/portfolio/winebar-molla/Vinbaren";
-import Torungen from "./pages/portfolio/torungen/Torungen";
+import Torungen from "./pages/portfolio/torungen/Torungen"
 import Magazine from "./pages/magazine/Magazine";
 import WilderKitchen from "./pages/portfolio/wilder-kitchen/WilderKitchen";
 import Bergill from "./pages/portfolio/bergill/Bergill";

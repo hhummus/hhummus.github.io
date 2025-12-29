@@ -3,7 +3,7 @@ import "../../css/airbnb.css";
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import AirBnbImagesArray from './Images';
-import Navbar from '../../components/global/Navbar'
+import Navbar from '../../components/navigation/Navbar'
 import Footer from '../../components/global/Footer';
 import scrollToTop from '../../components/global/scrollToTop';
 

@@ -2,7 +2,7 @@ import  * as React from 'react';
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import "../../css/magazine.css";
-import Navbar from '../../components/global/Navbar';
+import Navbar from '../../components/navigation/Navbar';
 import Footer from '../../components/global/Footer';
 import arrayMagazines from './ArrayMagazine';
 import scrollToTop from '../../components/global/scrollToTop';

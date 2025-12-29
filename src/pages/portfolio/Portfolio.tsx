@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { useEffect } from 'react';
 import "../../css/portfolio.css";
-import Navbar from "../../components/global/Navbar";
+import Navbar from "../../components/navigation/Navbar";
 import HeaderComponent from '../products/HeaderComp'
 import Footer from '../../components/global/Footer';
 import PortfolioNavigation from './PortfolioNavigation';

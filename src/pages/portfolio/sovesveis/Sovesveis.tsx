@@ -1,14 +1,14 @@
 import * as React from 'react'
 import { useEffect } from 'react';
 import sovesveisImagesArray from './Images';
-import Navbar from '../../../components/global/Navbar'
+import Navbar from '../../../components/navigation/Navbar'
 import HeaderComponent from '../../products/HeaderComp';
 import AboutIntroText from '../AboutIntroText';
 import Footer from '../../../components/global/Footer';
 import scrollToTop from '../../../components/global/scrollToTop';
 
 
-function Ambijus() {
+function Sovesveis() {
 
  useEffect(() => {
   scrollToTop()
@@ -19,7 +19,7 @@ function Ambijus() {
       <div className="portfolio-image-container col-sm-12 col-md-4 col-lg-3">
         <img
           src={image}
-          alt="Wilder Kitchen"
+          alt="Sovesveis"
           className="portfolioImageWidth img-fluid"
         ></img>
       </div>
@@ -47,4 +47,4 @@ function Ambijus() {
   );
 };
 
-export default Ambijus;
+export default Sovesveis;
