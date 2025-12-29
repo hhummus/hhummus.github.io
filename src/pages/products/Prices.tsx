@@ -1,7 +1,7 @@
 import * as React from "react";
 import { useEffect } from "react";
 import "../../css/prices.css";
-import Navbar from "../../components/global/Navbar";
+import Navbar from "../../components/navigation/Navbar";
 import Footer from "../../components/global/Footer";
 import HeaderComponent from "./HeaderComp";
 import Products from "./Products";
