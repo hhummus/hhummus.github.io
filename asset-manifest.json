@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.89c06f4c.css",
-    "main.js": "/static/js/main.58e380dd.js",
+    "main.js": "/static/js/main.68c26073.js",
     "static/js/787.ddf1fbd0.chunk.js": "/static/js/787.ddf1fbd0.chunk.js",
     "static/media/airbnb-26.jpg": "/static/media/airbnb-26.ebafdedd5d199fcf0e97.jpg",
     "static/media/airbnb-2.jpg": "/static/media/airbnb-2.b040c5fdbeaad4729e18.jpg",
@@ -147,11 +147,11 @@
     "static/media/bergill-optimized.jpg": "/static/media/bergill-optimized.6e7e8e8e03d53da7281d.jpg",
     "index.html": "/index.html",
     "main.89c06f4c.css.map": "/static/css/main.89c06f4c.css.map",
-    "main.58e380dd.js.map": "/static/js/main.58e380dd.js.map",
+    "main.68c26073.js.map": "/static/js/main.68c26073.js.map",
     "787.ddf1fbd0.chunk.js.map": "/static/js/787.ddf1fbd0.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.89c06f4c.css",
-    "static/js/main.58e380dd.js"
+    "static/js/main.68c26073.js"
   ]
 }
