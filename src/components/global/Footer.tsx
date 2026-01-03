@@ -2,6 +2,8 @@ import * as React from "react";
 import { Link } from "react-router-dom";
 import "../../css/footer.css";
 
+const year = new Date().getFullYear();
+
 function Footer() {
   return (
     <div className="globalFooter">
@@ -17,7 +19,7 @@ function Footer() {
         </div>
         <div className="row">
           <div className="col-12 containerAllRights">
-          <p className="allRights">© 2025 <Link to="/">Hasla-Løkkeberg Agentur</Link></p>
+          <p className="allRights"> © {year} <Link to="/">Hasla-Løkkeberg Agentur</Link></p>
           </div>
        
         </div>
