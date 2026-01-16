@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.89c06f4c.css",
-    "main.js": "/static/js/main.c9f40520.js",
+    "main.css": "/static/css/main.fc1f3f0e.css",
+    "main.js": "/static/js/main.4f73a8bc.js",
     "static/js/787.ddf1fbd0.chunk.js": "/static/js/787.ddf1fbd0.chunk.js",
     "static/media/airbnb-26.jpg": "/static/media/airbnb-26.ebafdedd5d199fcf0e97.jpg",
     "static/media/airbnb-2.jpg": "/static/media/airbnb-2.b040c5fdbeaad4729e18.jpg",
@@ -135,7 +135,6 @@
     "static/media/social-4-optimized.jpg": "/static/media/social-4-optimized.fb5ed4e5a86974779e66.jpg",
     "static/media/sovesveis-2-optimized.jpg": "/static/media/sovesveis-2-optimized.92775107e12aa89615a2.jpg",
     "static/media/social-7-optimized.jpg": "/static/media/social-7-optimized.2275af8ee6ed0e68e908.jpg",
-    "static/media/nm-13-optimized.jpg": "/static/media/nm-13-optimized.39684b8663a7e8205c35.jpg",
     "static/media/bli-kjent-2-optimized.jpg": "/static/media/bli-kjent-2-optimized.d870029dc72f52330798.jpg",
     "static/media/social-8-optimized.jpg": "/static/media/social-8-optimized.c74274dbb485e1d4c8d3.jpg",
     "static/media/kok-8-optimized.jpg": "/static/media/kok-8-optimized.486b9ea26b4d8ac84b5e.jpg",
@@ -146,12 +145,12 @@
     "static/media/tidligere-arbeid-intro-image-optimized.jpg": "/static/media/tidligere-arbeid-intro-image-optimized.e92b9af5cdead47589e6.jpg",
     "static/media/bergill-optimized.jpg": "/static/media/bergill-optimized.6e7e8e8e03d53da7281d.jpg",
     "index.html": "/index.html",
-    "main.89c06f4c.css.map": "/static/css/main.89c06f4c.css.map",
-    "main.c9f40520.js.map": "/static/js/main.c9f40520.js.map",
+    "main.fc1f3f0e.css.map": "/static/css/main.fc1f3f0e.css.map",
+    "main.4f73a8bc.js.map": "/static/js/main.4f73a8bc.js.map",
     "787.ddf1fbd0.chunk.js.map": "/static/js/787.ddf1fbd0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.89c06f4c.css",
-    "static/js/main.c9f40520.js"
+    "static/css/main.fc1f3f0e.css",
+    "static/js/main.4f73a8bc.js"
   ]
 }
