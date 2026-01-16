@@ -2,3 +2,19 @@
 #error-page .container {
     margin-top: 2rem;
 }
+
+.errorBackHome {
+    display: inline-block;
+    margin-top: 1rem;
+    color: #262626ea;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    padding-bottom: 0.2rem;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.errorBackHome:hover {
+    transition: 0.1s ease-in-out;
+    border-bottom: 1px solid #2626268d;
+}

@@ -1,4 +1,3 @@
-import * as React from "react";
 import "../../css/navbar.css"
 import { useState, useEffect, useRef} from "react";
 import MobileNav from "./MobileNav";

@@ -1,5 +1,4 @@
-import * as React from "react";
-import { homepageNavigation } from "../../pages/landingPage/navigationArray";
+import { homepageNavigation } from "../../data/navigationArray";
 import { Link } from "react-router-dom";
 import { Cross as Hamburger } from "hamburger-react";
 import { useState } from "react";

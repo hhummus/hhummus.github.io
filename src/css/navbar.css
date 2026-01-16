@@ -45,10 +45,35 @@
 }
 
 .desktopNav{
-    display: inline;
     text-align: end;
 }
 .desktopNav a{
+    margin-right: 1rem;
+}
+.desktopNavPrimary {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.navMoreButton {
+    background: none;
+    border: none;
+    color: #262626ea;
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+    padding: 0;
+    margin-left: 0.5rem;
+}
+.desktopNavSecondary {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 0.6rem;
+    padding: 0.4rem 0;
+    opacity: 0.9;
+    animation: navSecondaryFade 160ms ease-in-out;
+}
+.desktopNavSecondary a {
     margin-right: 1rem;
 }
 .navDropdownDivider {
@@ -85,5 +110,16 @@
     }
     .navDropdownDivider {
         margin-bottom: 1rem;
+    }
+}
+
+@keyframes navSecondaryFade {
+    from {
+        opacity: 0;
+        transform: translateY(-4px);
+    }
+    to {
+        opacity: 0.9;
+        transform: translateY(0);
     }
 }

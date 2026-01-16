@@ -1,4 +1,3 @@
-import * as React from "react";
 
 function HeaderComponent(props: { pricesImage: string; titlePricesHeader: string }) {
   return (

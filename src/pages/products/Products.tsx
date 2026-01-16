@@ -1,24 +1,10 @@
-import * as React from "react";
 import { Link } from "react-router-dom";
-import * as data from "../../components/json/InfoProducts.json";
-
-// making data to be an array to use map function
-const dataArray= Array.from(data);
+import { infoProducts } from "../../data/InfoProducts";
 
 function Products() {
-  // setting types to be expected from data
-  interface itemObjects {
-    id: number,
-    headline: string,
-    intro: string,
-    cost: string,
-    link: string,
-    more: string
-  }
-  
   return (
     <div className="product-container">
-      {dataArray.map((item:itemObjects) => {
+      {infoProducts.map((item) => {
         return (
           <div key={item.id} className="products">
             <div className="container">

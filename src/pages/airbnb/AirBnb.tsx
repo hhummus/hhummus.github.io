@@ -1,16 +1,10 @@
-import * as React from 'react';
 import "../../css/airbnb.css";
-import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import AirBnbImagesArray from './Images';
 import Navbar from '../../components/navigation/Navbar'
 import Footer from '../../components/global/Footer';
-import scrollToTop from '../../components/global/scrollToTop';
 
 function Ambijus() {
- useEffect(() => {
-  scrollToTop()
- }, []);
 
   const airBnbPhotos = AirBnbImagesArray.map((image: string) => {
     return (

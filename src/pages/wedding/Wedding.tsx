@@ -1,16 +1,10 @@
-import * as React from 'react'
-import { useEffect } from 'react';
 import Navbar from '../../components/navigation/Navbar'
 import "../../css/wedding.css";
-import scrollToTop from '../../components/global/scrollToTop';
 import weddingImagesArray from './Images';
 import WeddingText from './WeddingText';
 import Footer from '../../components/global/Footer';
 
 function Wedding() {
- useEffect(() => {
-  scrollToTop()
- }, []);
 
   const weddingPhotos = weddingImagesArray.map((image: string) => {
     return (
