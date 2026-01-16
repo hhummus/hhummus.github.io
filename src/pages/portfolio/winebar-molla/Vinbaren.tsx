@@ -1,48 +1,39 @@
-import * as React from 'react'
-import { useEffect } from 'react';
 import winebarMollaImagesArray from './Images';
-import Navbar from '../../../components/navigation/Navbar'
-import HeaderComponent from '../../products/HeaderComp';
-import AboutIntroText from '../AboutIntroText';
-import Footer from '../../../components/global/Footer';
-import scrollToTop from '../../../components/global/scrollToTop';
+import MediaTextSection from '../../../components/layout/MediaTextSection';
+import PhotoGrid from "../../../components/layout/PhotoGrid";
 
-function NewMovements() {
+function Vinbaren() {
 
-  useEffect(() => {
-    scrollToTop()
-   }, []);
-
-    const winebarMollaPhotos = winebarMollaImagesArray.map((image: string) => {
-        return (
-         <div className="portfolio-image-container col-sm-12 col-md-4 col-lg-3">
-            <img
-              src={image}
-              alt="vinbaren på mølla"
-              className="portfolioImageWidth img-fluid"
-            ></img>
-          </div>
-        );
-    });
-    
   return (
-    <div>
-        <Navbar />
-        <HeaderComponent 
-       pricesImage="portfolioHeaderImage"
-       titlePricesHeader="Tidligere arbeid"
+    <div className="container portfolioIndividualContainer">
+      <MediaTextSection
+        wrapperClassName="aboutIntroText"
+        containerClassName=""
+        textClassName="col"
+        link={(
+          <a
+            className="visitCta"
+            href="https://www.instagram.com/vinbaren.molla/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Besøk Vinbaren på mølla på Instagram her
+          </a>
+        )}
+      >
+        <h2>Vinbaren på mølla</h2>
+        <p>Vinbaren på Mølla er stedet der du forveksler Kristiansand med København og kan nyte en lille på varme, late sommerdager. Et bredt utvalg naturvin på glass og flaske, deilig og enkel sommermat og en vibe resten av sommerNorge bare kan drømme om.</p>
+      </MediaTextSection>
+      <PhotoGrid
+        images={winebarMollaImagesArray}
+        gridClassName="portfolioPhotos row"
+        gridId="portfolioPhotosWrap"
+        itemClassName="portfolio-image-container col-sm-12 col-md-4 col-lg-3"
+        imageClassName="portfolioImageWidth img-fluid"
+        imageAlt="portfolio photos"
       />
-      <div className="container portfolioIndividualContainer">
-      <AboutIntroText 
-      introTitle="Vinbaren på mølla" 
-      introText="Vinbaren på Mølla er stedet der du forveksler Kristiansand med København og kan nyte en lille på varme, late sommerdager. Et bredt utvalg naturvin på glass og flaske, deilig og enkel sommermat og en vibe resten av sommerNorge bare kan drømme om.  "
-     introLinkText="Besøk Vinbaren på mølla på Instagram her" introLink="https://www.instagram.com/vinbaren.molla/"/>
-      <div className="portfolioPhotos row" id="portfolioPhotosWrap" >{winebarMollaPhotos}</div>
-      </div>
-      <Footer />
     </div>
-    
-  )
+  );
 }
 
-export default NewMovements
+export default Vinbaren;
