@@ -1,14 +1,7 @@
-import * as React from 'react'
-import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import {homepageNavigation} from "./navigationArray";
-import scrollToTop from '../../components/global/scrollToTop';
+import {homepageNavigation} from "../../data/navigationArray";
 
 function Homepage() {
-
-useEffect(() => {
-  scrollToTop()
-}, []);
 
 // setting types to be expected 
   interface itemObjects {
@@ -21,20 +14,18 @@ useEffect(() => {
   return (
     <div className="container">
       <div className="row">
-
       {homepageNavigation.map((link:itemObjects) => {
         return (
           <div className="col-md-6 homepageLinkContainer" key={link.id}>
             <Link 
             to={link.link} 
             className={`homepageLinks ${link.class}`} 
-            onClick={() => scrollToTop()}>
+            >
             {link.title}
            </Link>
           </div>
         );
       })}
-  
     </div>
   </div>
   );
