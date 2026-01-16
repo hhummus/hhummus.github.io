@@ -1,7 +1,7 @@
-import * as React from "react";
 import emailjs from "emailjs-com";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
+import { useSearchParams } from "react-router-dom";
 
 function ContactForm() {
   // when sending form, set disabled until succesfully sent
@@ -27,13 +27,28 @@ function ContactForm() {
     register,
     handleSubmit,
     reset,
+    setValue,
+    getValues,
     formState: { errors },
   } = form;
+  const [searchParams] = useSearchParams();
+  const subjectParam = searchParams.get("subject");
+  const issueParam = searchParams.get("issue");
+  const showMagazineHint = subjectParam === "KONTAKT" && !!issueParam;
+
+  useEffect(() => {
+    if (subjectParam) {
+      setValue("subject", subjectParam);
+    }
+    if (issueParam && !getValues("message")) {
+      const formattedIssue = issueParam.padStart(2, "0");
+      setValue("message", `Ønsker å kjøpe KONTAKT ${formattedIssue}`);
+    }
+  }, [subjectParam, issueParam, setValue, getValues]);
 
   // checking that formData is valid
   function sendEmail(formData: Record<string, unknown> | undefined) {
-    // logging what is to be sent
-    console.log(formData);
+
     // diable button until request is done
     setIsDisabled(true);
     setIsSent("sender epost...");
@@ -119,6 +134,12 @@ function ContactForm() {
             })}
             className="input-field"
           ></textarea>
+          {showMagazineHint && (
+            <small className="form-hint">
+              Husk å skrive din adresse og telefonnummer for at vi skal kunne sende med
+              Helthjem. Du får Vipps-krav fra oss når pakken er sendt.
+            </small>
+          )}
           <small className="form-error">{errors.message?.message}</small>
         </div>
 
