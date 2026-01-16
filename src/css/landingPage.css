@@ -35,7 +35,7 @@
     text-decoration: none;
 }
 .aboutUsLink {
-    background-image: url("../img/om-oss-optimized.jpg");
+    background-image: url("../img/landing/om-oss-optimized.jpg");
     background-size: cover;
     background-position: center;
     height: 400px;
@@ -45,7 +45,7 @@
     margin: 1rem;
 }
 .previousWorkLink {
-    background-image: url("../img/tidligere-arbeid-optimalized.jpg");
+    background-image: url("../img/landing/tidligere-arbeid-optimalized.jpg");
     background-size: cover;
     background-position: center;
     height: 400px;
@@ -55,7 +55,7 @@
     margin: 1rem;
 }
 .pricesLink {
-    background-image: url("../img/prislister-optimized.jpg");
+    background-image: url("../img/landing/prislister-optimized.jpg");
     background-size: cover;
     background-position: bottom;
     height: 400px;
@@ -65,7 +65,7 @@
     margin: 1rem;
 }
 .magazineLink {
-    background-image: url("../img/tidsskrift-optimized.jpg");
+    background-image: url("../img/landing/tidsskrift-optimized.jpg");
     background-size: cover;
     background-position: center;
     height: 400px;
@@ -75,7 +75,7 @@
     margin: 1rem;
 }
 .contactUsLink {
-    background-image: url("../img/contact-us-optimized.jpg");
+    background-image: url("../img/landing/contact-us-optimized.jpg");
     background-size: cover;
     background-position: bottom;
     height: 400px;
@@ -95,7 +95,7 @@
     margin: 1rem;
 }
 .weddingLink{
-    background-image: url("../img/bryllup-4-optimized-kopi.jpg");
+    background-image: url("../img/landing/bryllup-4-optimized-kopi.jpg");
     background-size: cover;
     background-position: center;
     height: 400px;

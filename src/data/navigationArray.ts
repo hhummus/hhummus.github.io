@@ -1,0 +1,51 @@
+export const homepageNavigation = [
+  {
+    id: 1,
+    title: "Om oss",
+    class: "aboutUsLink",
+    link: "om-oss",
+    primary: true,
+  },
+  {
+    id: 2,
+    title: "Tidsskriftet KONTAKT",
+    class: "magazineLink",
+    link: "tidsskrift-kontakt",
+    primary: false,
+  },
+  {
+    id: 3,
+    title: "Bryllup",
+    class: "weddingLink",
+    link: "bryllup",
+    primary: false,
+  },
+  {
+    id: 4,
+    title: "Tidligere arbeid",
+    class: "previousWorkLink",
+    link: "tidligere-arbeid",
+    primary: true,
+  },
+  {
+    id: 5,
+    title: "Boligfotografering",
+    class: "housePhotography",
+    link: "boligfotografering",
+    primary: false,
+  },
+  {
+    id: 6,
+    title: "Prislister",
+    class: "pricesLink",
+    link: "prislister",
+    primary: true,
+  },
+  {
+    id: 7,
+    title: "Kontakt oss",
+    class: "kontakt",
+    link: "kontakt-oss",
+    primary: true,
+  },
+];
