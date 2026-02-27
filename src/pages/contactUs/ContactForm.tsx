@@ -3,6 +3,10 @@ import { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import { useSearchParams } from "react-router-dom";
 
+const EMAILJS_SERVICE_ID = process.env.REACT_APP_EMAILJS_SERVICE_ID;
+const EMAILJS_TEMPLATE_ID = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
+const EMAILJS_PUBLIC_KEY = process.env.REACT_APP_EMAILJS_PUBLIC_KEY;
+
 function ContactForm() {
   // when sending form, set disabled until succesfully sent
   //so user does not accidentally send several emails
@@ -48,6 +52,12 @@ function ContactForm() {
 
   // checking that formData is valid
   function sendEmail(formData: Record<string, unknown> | undefined) {
+    if (!EMAILJS_SERVICE_ID || !EMAILJS_TEMPLATE_ID || !EMAILJS_PUBLIC_KEY) {
+      setIsSuccess(
+        "Kontaktskjema er midlertidig utilgjengelig. Vennligst kontakt oss senere."
+      );
+      return;
+    }
 
     // diable button until request is done
     setIsDisabled(true);
@@ -56,10 +66,10 @@ function ContactForm() {
     // connecting to emailjs and sending the formData (input values)
     emailjs
       .send(
-        "service_da8dq9b",
-        "template_jcw0eca",
+        EMAILJS_SERVICE_ID,
+        EMAILJS_TEMPLATE_ID,
         formData,
-        "ZRcK89DVwt93bESi5"
+        EMAILJS_PUBLIC_KEY
       )
       // then updating UI depedning on success or error
       .then(
