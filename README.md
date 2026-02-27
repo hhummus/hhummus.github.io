@@ -1,34 +1,36 @@
-# Website for Hasla-Løkkeberg Agency
+# Hasla-Lokkeberg Website
 
-**tools**
- React 
- CSS
- Bootstrap 
- HTML
- Javascript
- Typescript
- Git
+Professional website for **Hasla-Lokkeberg**, a photography firm.
 
-## Test app locally
+## Live Website
 
-1. download the repo
-2. run `npm run start`in your console (make sure to be in the correct repository)
-3. app will open locally on port [:3000 ](http://localhost:3000/) for you to view
+- **Production:** https://www.haslalokkeberg.no
 
+## Project Purpose
 
-### Ongoing development of site -> bugs & fixes
+This repository contains the source code for the public company website, including:
 
-- customers should also get a confirmation email from the firm after they've sent an email, in addition to the visual confimation they get on the contact page after a (successfull) send.
+- Landing page and company presentation
+- Portfolio pages for selected photo projects
+- Service pages (including wedding and property photography)
+- Contact form for customer inquiries
 
-   
-#### New website is live  
+## Tech Stack
 
- - www.haslalokkeberg.no
+- React
+- TypeScript
+- React Router
+- Bootstrap + custom CSS
+- EmailJS (contact form delivery)
 
- 
+## Environment Variables
 
+The contact form requires local environment variables.  
+Use `.env.example` as the template for your local `.env.local` file.
 
+## Usage And Rights
 
+This repository is published for transparency and portfolio visibility.
 
-
-
+- Source code, design, text, and images are proprietary to Hasla-Lokkeberg unless otherwise stated.
+- Reuse, redistribution, or commercial use is not permitted without written permission.
